@@ -4,8 +4,7 @@ set :use_sudo, false
 ssh_options[:forward_agent] = true
 default_run_options[:pty] = true
 
-set :repository, "/hof/manufactory/sirena/"
-set :local_repository, "git@github.com:rytir/sirena.git"
+set :repository, "git@github.com:rytir/sirena.git"
 set :deploy_to, "/opt/ruby/railapps/urls/"
 
 set :scm, :git
